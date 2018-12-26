@@ -4,6 +4,7 @@ body{
   color: #3C3C3C;
   margin: 0;
   padding: 0;
+  cursor: url("../images/cursor.png"),auto;
 }
 a{text-decoration: none;}
 
@@ -50,7 +51,40 @@ a{text-decoration: none;}
 #nav ul li:hover .submenu{ /*鼠标放在相应的位置显示二级导航栏*/
   display: block; /*显示*/
 }
-/*导航栏end*/
+/*彩蛋*/
+#heart{
+  position: relative;
+}
+#egg{
+  visibility: hidden;
+  width: 250px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 3px 10px;
+  border-radius: 6px; 
+  position: absolute;
+  top: 65px;
+  left: -90px;
+  z-index: 1;
+  /*淡入*/
+  opacity: 0;
+  transition: opacity 2s;
+}
+#heart #egg::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* 提示工具头部 */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+#heart:hover #egg{
+  visibility: visible;
+  opacity: 1;
+}
 
 /*图*/
 .banner{
@@ -89,7 +123,7 @@ a{text-decoration: none;}
 
  /*电影*/
  #movies{
-  margin: 175px 50px 25px 50px; /*上右下左*/
+  margin: 250px 50px 100px 50px; /*上右下左*/
   border: thin dotted #999999;
   float: left;
   padding: 50px 50px 20px 50px;
