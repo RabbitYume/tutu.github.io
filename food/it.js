@@ -21,16 +21,14 @@ function beginRndNum(trigger){
 function updateRndNum(){
  var arr=[
  "螺蛳粉",
+ "面",
+ "麻辣烫"
  "炒粉",
  "云吞",
- "关东煮",
- "甜品",
- "炒饭",
  "桂林米粉",
- "饭",
  "饺子",
  "M记",
- "寿司",
+ "日料",
  "竹升面"
  ]
  var num = Math.floor(Math.random()*g_PersonCount+1);
