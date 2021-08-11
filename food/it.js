@@ -21,15 +21,16 @@ function beginRndNum(trigger){
 function updateRndNum(){
  var arr=[
  "螺蛳粉",
- "面",
- "麻辣烫"
- "炒粉",
+ "粉",
  "云吞",
- "桂林米粉",
- "饺子",
+ "冰冰凉",
  "M记",
  "日料",
- "竹升面"
+ "竹升面",
+ "炸鸡",
+ "火锅",
+ "烧烤",
+ "麻辣烫"
  ]
  var num = Math.floor(Math.random()*g_PersonCount+1);
  var num2 = arr[num];//把random出来的数字变成数组下标
